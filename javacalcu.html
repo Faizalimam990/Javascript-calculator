@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript calculator</title>
+</head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="styles/bootstrap.min.css" rel="stylesheet"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="styles/bootstrap.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style type="text/css">
+  	body
+  	{
+  		background-image: linear-gradient(to left,#a3f99e,#e4f99e)
+  	}
+
+  	.row input
+  	{
+  		padding: 5px;
+        margin-left: 40px;
+        margin-right: 50px;
+        margin-top: 10px;
+        border-radius: 50px;
+        margin-top: 50px;
+
+
+  	
+  	}
+  	.row input:hover
+  	{
+  		width: 20%;
+  	}
+  	.btn
+  	{
+  		margin-right: 10px;
+  		position: relative;
+
+  	}
+  	
+  	.btn:hover
+  	{
+  		background-color:#34e509;
+  		border-radius: 40px;
+  		}
+
+  .bo
+  {
+  	border-radius: 30px;
+  }
+.bo:hover
+{
+  border-radius: 100px;
+  transition: 0.4s;
+  box-shadow: 2px 5px 2px 5px #6989f7;
+}
+.bo :hover
+{
+	font-family: FreeMono, monospace
+}
+
+
+
+
+  </style>
+<body>
+	<div class="container mx-auto bo" style="border:1px solid black; text-align: center; width: 50%; margin-top: 100px; background-color: #81eef3;">
+  <div class="container-fluid mx-auto ">
+<h2>Welcome to Javascript Calculator</h2>
+</div>
+<div class="container p-3">
+	<div class="row">
+		<input type="text" name="" id="n1" placeholder="input number 1">
+		<input type="text" name="" id="n2" placeholder="input number 2">
+			
+		
+		</div>
+		<div class="container p-3">
+		<input type="submit" name="" class="btn btn-primary" value="addition" onclick="add()">
+		<input type="submit" name="" class="btn btn-warning" value="subtract" onclick="subtract()">
+		<input type="submit" name="" class="btn btn-danger" value="multiply" onclick="multiply()">
+		<input type="submit" name="" class="btn btn-success" value="divide" onclick="divide()">
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		function add(){
+			var a =document.getElementById('n1').value;
+			var b =document.getElementById('n2').value;
+			document.write(Number(a)+Number(b))
+		}
+       function subtract(){
+			var a =document.getElementById('n1').value;
+			var b =document.getElementById('n2').value;
+			document.write(Number(a)-Number(b))
+		}
+		function multiply(){
+			var a =document.getElementById('n1').value;
+			var b =document.getElementById('n2').value;
+			document.write(Number(a)*Number(b))
+		}
+		function divide(){
+			var a =document.getElementById('n1').value;
+			var b =document.getElementById('n2').value;
+			document.write(Number(a)%Number(b))
+		}
+
+
+
+	</script>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
